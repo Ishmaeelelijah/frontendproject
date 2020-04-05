@@ -1,0 +1,103 @@
+*{
+    padding-bottom: 0;
+    margin: 0;
+}
+.wrapper{
+    height: 100vh;
+    background-image: url(./images/pexels-photo-3532005.jpeg);
+    background-size: cover;
+}
+/* css for cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding-top: 5rem;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+   
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .btn-submit{
+      width: 47%;
+  }
+  .profile-box{
+     height: 80vh;
+  }
+  #fname{
+      width: 15%;
+  }
+  #sname{
+      width: 15%;
+  }
+  #pwd{
+      width: 15%;
+  }
+ 
+  #p1{
+      margin-left: 40%;
+      color: white;
+      font-weight: 700;
+  }
+  #head2{
+      margin-left: 25%;
+      margin-top: 20%;
+      font-weight: 900;
+      color: white;
+  }
+  #head{
+      font-weight: 700;
+      margin-left: 35%;
+  }
+ .btn1{
+   position: relative;
+   margin-top: 5rem;
+ }
+  li{
+      list-style: none;
+  }
+
+  #profile-grid{
+    align-items: center;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 5rem;
+  }
+  h1{
+margin-top: 30PX;
+margin-bottom: 30px;
+justify-content: center;
+align-items: center;
+  }
+
+ .more-info{
+   margin-top: 1rem;
+ }
+p{
+  line-height: ;
+}
