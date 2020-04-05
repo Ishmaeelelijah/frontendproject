@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+  <title>Yellow Green Media</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">Yellow Green Media</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="front.html">Home</a></li>
+        <li><a href="#">User Profile</a></li>
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">News Feed</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal">New User </a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Profile Section-->
+  <section id="profile-grid">
+    <div>
+      <h1 id="head">Meet The Team</h1>
+    </div>
+    <!--Profile 1-->
+    <div class="row profile-box">
+      <div class="col-md-3 text-center">
+        <img src="images/elie.jfif" alt="John" style="width:100%">
+        <h2>Jessie Smith</h2>
+        <p class="title">Jessi22@gmail.com</p>
+        <p>Phone Number: 062 182 7916</p>
+        <p>Landline Number: 021 628 7652</p>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a><br>
+        <button type="button" class="btn btn-dark more-info" data-toggle="modal" data-target="#exampleModal">
+          More Information
+        </button>
+
+        <!--Profile 2 -->        ​
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="images/mike.jfif" alt="John" style="width:100%">
+        <h2>Mike Dave</h2>
+        <p class="title">MikeDave@gmail.com</p>
+        <p>Phone Number: 073 656 9721</p>
+        <p>Landline Number: 021 365 8721</p>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a><br>
+          <button type="button" class="btn btn-dark more-info" data-toggle="modal" data-target="#exampleModalCenter">
+            More Information
+          </button> ​         ​
+        </div>
+<!--Profile 3-->
+        <div class="col-md-3 text-center">
+          <!-- creating cards -->
+          <img src="images/william.jfif" alt="John" style="width:100%">
+          <h2>Willaim Lucas</h2>
+          <p class="title">Williamlucas@gmail.com</p>
+          <p>Phone Number: 072 395 6571</p>
+          <p>Landline Number: 021 459 9205</p>
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a><br>
+       
+            <button type="button" class="btn btn-dark more-info" data-toggle="modal" data-target="#exampleModalWilliam">
+              More Information
+            </button>         
+        </div>
+<!--Profile 4-->
+        <div class="col-md-3 text-center">
+          <!-- creating cards -->
+          <img src="images/McCoy.jfif" alt="John" style="width:100%">
+          <h2>Mary McCoy</h2>
+          <p class="title">McCoy@gmail.com</p>
+          <p>Phone Number: 065 3636 7568</p>
+          <p>Landline Number: 021 654 6789</p>
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a><br>
+          ​<button type="button" class="btn btn-dark more-info" data-toggle="modal" data-target="#exampleModalMcCoy">
+            More Information
+          </button>
+        </div>
+      </div> 
+  </section>
+
+  <!-- User Info-->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">New User</h4>
+        </div>
+        <!-- modal body -->
+        <div class="modal-body">
+          <div class="container">
+            <!-- form starts -->
+            <form action="/action_page.php" class="was-validated">
+              <div class="form-group">
+                <label for="uname">Firsname:</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter Firstname" name="uname" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                <label for="uname">Surnmae:</label>
+                <input type="text" class="form-control" id="sname" placeholder="Enter Surnmae" name="uname" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Phone Number:</label>
+                <input type="number" class="form-control" id="pwd" placeholder="Please Enter Phone Number" name="pswd"
+                  required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember" required> I agree to the t&c
+                  <div class="invalid-feedback">Check this checkbox to continue.</div>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-dark btn-submit">Submit</button>
+            </form>
+          </div>
+          <!-- modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  ​
+  <!-- Fisrt Profile Model -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- modal body -->
+        <div class="modal-body">
+          <ul>
+            <li>Name of Kin:Betty</li>
+            <li>Surname:Smith</li>
+            <li>Relationship:Sister</li>
+            <li>Adress:106 7avenue Maithland</li>
+            <li>Telephone Number:073 456 789</li>
+            <li>Landline: 021 345 6789</li>
+          </ul>
+        </div>
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".first-profile-modal-sm">Delete Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--firts delete modal-->
+  <div class="modal fade first-profile-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="container" id="delbd">
+        <h2>Delete Account</h2>
+        <p>Are you sure you want to delete your account?</p>
+        <div class="clearfix">
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-dark btn-cancel" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Second Profile model-->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Mike Dave</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Name of Kin:Chris</li>
+            <li>Surname:Dave</li>
+            <li>Relationship:Brother</li>
+            <li>Adress:106 8 avenue Maithland</li>
+            <li>Telephone Number:073 354 789</li>
+            <li>Landline: 021 097 6789</li>
+          </ul>
+        </div>
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".second-profile-modal-sm">Delete Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--second delete modal-->
+  <div class="modal fade second-profile-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="container" id="delbd">
+          <h1 class="heading">Delet Account</h1>
+          <p>Are you sure you want to delete your account?</p>
+          <div class="clearfix">
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-dark btn-cancel" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  ​
+  <!-- Thrird Modal Profile-->
+  <div class="modal fade" id="exampleModalWilliam" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">William Lucas</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- modal body -->
+        <div class="modal-body">
+          <ul>
+            <li>Name of Kin:MIke</li>
+            <li>Surname:Lucas</li>
+            <li>Relationship:Brother</li>
+            <li>Adress:106 Strand Street Cape Town</li>
+            <li>Telephone Number:073 354 789</li>
+            <li>Landline: 021 097 6789</li>
+          </ul>
+        </div>
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".third-profile-modal-sm">
+            Delete Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--third delete modal-->
+  <div class="modal fade third-profile-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="container" id="delbd">
+          <h2>Delete Account</h2>
+          <p>Are you sure you want to delete your account?</p>
+          <div class="clearfix">
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-dark btn-cancel" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  ​
+  <!-- Forth Profile Modal-->
+  <div class="modal fade" id="exampleModalMcCoy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Mary McCoy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- modal body -->
+        <div class="modal-body">
+          <ul>
+            <li>Name of Kin:Ray</li>
+            <li>Surname:McCoy</li>
+            <li>Relationship:Brother</li>
+            <li>Adress:10 Long Street Cape Town</li>
+            <li>Telephone Number:073 354 789</li>
+            <li>Landline: 021 097 6789</li>
+          </ul>
+        </div>
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".forth-profile-modal-sm">Delete Profile
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--fprth delete modal-->
+    <div class="modal fade forth-profile-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="container" id="delbd">
+            <h2>Delete Account</h2>
+            <p>Are you sure you want to delete your account?</p>
+            <div class="clearfix">
+              <button type="button" class="btn btn-danger" >Delete</button>
+              <button type="button" class="btn btn-dark btn-cancel" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
